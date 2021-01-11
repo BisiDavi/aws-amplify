@@ -40,14 +40,6 @@ app.get('/coins', function (req, res) {
       res.json({ coins: response.data.data });
     })
     .catch(err => res.json({ error: err }));
-
-  /* const coins = [
-    { name: 'Bitcoin', symbol: 'BTC', price_usd: '10000' },
-    { name: 'Ethereum', symbol: 'ETH', price_usd: '400' },
-    { name: 'Litecoin', symbol: 'LTC', price_usd: '150' },
-    { name: 'Tron', symbol: 'TRN', price_usd: '40' }
-  ]; */
-  // res.json({ coins });
 });
 
 /**********************

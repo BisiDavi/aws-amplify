@@ -1,10 +1,11 @@
 import React from 'react';
-import { Switch, BrowseRouter as Router, Route } from 'react-router-dom';
-import { Homepage, Auth, NotesApi, CoinsApi } from '@imports';
+import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
+import { Homepage, Auth, NotesApi, CoinsApi, Nav } from '../imports';
 
 const AppRoutes = () => {
   return (
     <Router>
+      <Nav />
       <Switch>
         <Route exact path="/" component={Homepage} />
         <Route path="/auth" component={Auth} />

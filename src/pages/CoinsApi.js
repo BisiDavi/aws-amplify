@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { API } from 'aws-amplify';
-import './App.css';
 
 const CoinsApi = () => {
   const [coins, updateCoins] = useState([]);
@@ -17,14 +16,14 @@ const CoinsApi = () => {
   const fetchCoins = async () => {
     const { limit, start } = input;
     const data = await API.get(
-      '/cryptoapi',
-      `/coins?limit=${limit}$start=${start}`
+      'cryptoapi',
+      `/coins?limit=${limit}&$start=${start}`
     );
     updateCoins(data.coins);
   };
 
   const displayCoins = coins => {
-    coins.map((coin, index) => (
+    return coins.map((coin, index) => (
       <div key={index} className="cryptocoin">
         <h2>
           {coin.name} - {coin.symbol}
@@ -54,7 +53,7 @@ const CoinsApi = () => {
     <div className="CoinsApi">
       <h1>Reading Crypto data from Coinlore API</h1>
       {displayCoins(coins)}
-      {getMoreCoinsForm}
+      {getMoreCoinsForm()}
     </div>
   );
 };
