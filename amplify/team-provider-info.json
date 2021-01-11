@@ -10,6 +10,11 @@
       "StackName": "amplify-learningaws-dev-25258",
       "StackId": "arn:aws:cloudformation:us-east-1:948907514426:stack/amplify-learningaws-dev-25258/bf8cccb0-53af-11eb-9b71-12aa277c08db",
       "AmplifyAppId": "d3hdsz3wchgwzu"
+    },
+    "categories": {
+      "auth": {
+        "learningaws36d8be76": {}
+      }
     }
   }
 }
