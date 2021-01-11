@@ -69,7 +69,7 @@
         "Timeout": "25",
         "Code": {
           "S3Bucket": "amplify-learningaws-dev-25258-deployment",
-          "S3Key": "amplify-builds/cryptofunction-6743696c6b3739416a2f-build.zip"
+          "S3Key": "amplify-builds/cryptofunction-51535869483050585135-build.zip"
         }
       }
     },
